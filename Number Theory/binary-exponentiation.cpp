@@ -2,8 +2,8 @@
 
 Binary Exponentiation or binpow
 (a+b)%m=((a%m)+(b%m))%m
-(a*b)%m=((a%m)*(b&m))%m
-(a-b)%m=((a&m)-(b%m)+m)%m
+(a*b)%m=((a%m)*(b%m))%m
+(a-b)%m=((a%m)-(b%m)+m)%m
 (a^b)%m=   > if b is 0 return a % m
            > if b is even return (a^(b/2))^2
            > if b is odd return (a*(a^(b-1/2))^2)
