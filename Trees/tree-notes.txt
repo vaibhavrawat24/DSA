@@ -1,0 +1,67 @@
+A tree is a collection of nodes connected to each other by means of "edges" which are either directed or undirected.
+
+Application:
+× Store data in hierarchical structure. 
+× Organize data. 
+× Heap
+× Routing table
+
+Use :
+× To store data or information naturally in form   			of hierarchy. ex, file system on a comp.
+× BST providr moderate access/search	(quicker
+   than Linked List & slower than arrays) 
+×  Trees provide moderate insertion/deletion
+    (quicker than arrays & slower than L.L)
+
+Binary Trees :
+In a binary tree, every element/parent node can have atmost 2 children. 
+
+Properties :
+×  The subtrees of BT also acts as a BT once. 
+×  The top most node is called the root.
+×  A node w/o child is called leaf or terminal 
+    node. 
+×  The max no. of nodes at each level i is 2^i.
+×  Height - Longest path from root to leaf. 
+×  Depth - Length of path to its root. 
+
+Types of Binary Tree :
+× Perfect BT - Every internal node has 2 child 
+   nodes. All leaf are at same level. 
+× Full BT - Every node has either exactly two 
+   child or no child nodes 
+× Complete BT - All level except last one are  
+    full with nodes. 
+×  Skewed BT - All nodes have either one or no        
+    no child. (Used for finding complexity) 
+× Degenerate BT - All internal nodes have only
+    one child. 
+× Balanced BT - Left and right trees differ by 
+   either 0 or 1.
+
+Traversal :
+
+DFS:
+× Preorder - (Ro, L,R) visit left & add. 
+× Inorder - (L, Ro, R) we visit left till end & then
+   add. 
+× Postorder - (L, R, Ro) we visit all(but first left 
+   should be completed) 
+
+BFS:
+× Level Order
+
+
+Max Depth Of BT :
+
+  int maxDepth(Node* root) 
+  {  
+						if(root==NULL) return 0;
+
+        int left = 1+maxDepth(root->left);
+        int right = 1+maxDepth(root->right);
+
+						return max(left, right) ;
+} 
+
+
