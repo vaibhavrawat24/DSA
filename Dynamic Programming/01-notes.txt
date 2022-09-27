@@ -1,0 +1,8 @@
+Dynamic Programming :- Dynamic Programming is mainly an optimization over plain recursion. Wherever we see a 
+recursive solution that has repeated calls for same inputs, we can optimize it using Dynamic Programming. 
+The idea is to simply store the results of subproblems, so that we do not have to re-compute them when needed later.
+
+* Memoization (Top Down)- We tend to store value of subproblems in some map/table. for ex:- fibonacci series
+* Tabulation (Bottom Up)- In the tabulation approach to DP (also known as the table-filling method) we solve all 
+sub-problems and store their results on a matrix. these results are then used to solve larger problems that depend 
+on the previously computed results. Because of this, the tabulation approach is also known as a bottom-up approach.
