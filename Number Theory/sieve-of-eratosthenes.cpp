@@ -27,6 +27,7 @@ int main()
         if(prime[i]==true) cout<<i<<" is a prime no."<<endl;
         else cout<<i<<" is not a prime no."<<endl;
     }
+
    
     return 0;
 }
