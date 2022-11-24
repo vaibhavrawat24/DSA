@@ -1,3 +1,6 @@
+//Time Complexity: O((2^n)*n)
+//Space Complexity:O(n)
+
 // KEEP MOVING FORWARD !
 
 #include<bits/stdc++.h>
