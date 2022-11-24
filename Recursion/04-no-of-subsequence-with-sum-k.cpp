@@ -1,7 +1,7 @@
 ////Print total no. of subsequence with sum k
 
-//Time Complexity:
-//Space Complexity:
+//Time Complexity: O(2^n)
+//Space Complexity: O(n)
 
 // KEEP MOVING FORWARD !
 
@@ -29,6 +29,8 @@ bool prime(int n)
 
 int subseq(int arr[],int sum,int s,int idx,int n)
 {
+    if(s>sum) return 0;
+
     if(idx==n)
     {
         if(s==sum) return 1;
